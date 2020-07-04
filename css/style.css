@@ -1,0 +1,17 @@
+body{
+  display: flex;
+  flex-flow: column;
+  align-items: center;  
+  margin: 10px 180px 0;
+}
+
+.titulo, 
+.subtitulo, 
+.data, 
+.url,
+.legenda, 
+.copyright, 
+.explanacao{
+  margin-bottom: 20px;
+}
+
