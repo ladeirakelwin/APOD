@@ -1,0 +1,36 @@
+body{
+  display: flex;
+  /* background: blue; */
+  justify-content: center;
+  margin: 20px;
+  background: url(https://s1.1zoom.me/b5050/435/427757-Kycb_1366x768.jpg);
+
+}
+
+.form{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+#data{
+  height: 2rem;
+  color: #000;
+  padding: 0.2rem;
+}
+
+.submit{
+  cursor: pointer;
+  height: 2rem;
+  background: #880AF0;
+}
+
+.form *{
+  margin: 1.5vh;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+}
