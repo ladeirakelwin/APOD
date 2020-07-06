@@ -4,7 +4,10 @@ body{
   justify-content: center;
   margin: 20px;
   background: url(https://s1.1zoom.me/b5050/435/427757-Kycb_1366x768.jpg);
-
+  flex-direction: column;
+}
+.requisicao{
+  margin-bottom: 2vh;
 }
 
 .form{
@@ -18,7 +21,7 @@ body{
 #data{
   height: 2rem;
   color: #000;
-  padding: 0.2rem;
+  padding: 0.rem;
 }
 
 .submit{
@@ -33,4 +36,15 @@ body{
   border: none;
   border-radius: 5px;
   color: #FFF;
+}
+
+.poteImg{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.img{
+  border-radius: 5px;
+  border: 5px solid rgba(50, 100, 200, 0.2);
 }

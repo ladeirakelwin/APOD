@@ -2,21 +2,26 @@ let urlDaApi = 'https://api.nasa.gov/planetary/apod?api_key=4aCgrQiswA81Mfaa3Psl
 
 let form = document.querySelector('.form');
 let input = document.querySelector('#data');
-let body = document.querySelector('body');
+let poteImg = document.querySelector('.poteImg');
 
 form.addEventListener('submit', function(event){
   event.preventDefault();
   let reqMedia = new XMLHttpRequest();
-  urlDaApi = urlDaApi+`&date=${input.value}`;
+
+  atualizaUrl(`&date=${input.value}`);
   reqMedia.open('GET', urlDaApi);
   reqMedia.onload = () => {
     let req = JSON.parse(reqMedia.responseText);
     let img = document.createElement('img');
-    img.src = req.url;
-    body.appendChild(img);    
+    img.src = req.hdurl;
+    img.classList.add('img');
+    poteImg.appendChild(img);  
+    console.log(urlDaApi)  
   }
   
   reqMedia.send();
 });
 
-
+function atualizaUrl(url){
+  urlDaApi = urlDaApi + url;
+}
