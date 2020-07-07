@@ -23,6 +23,7 @@ body{
 .titulo{
   font-size: 2.5rem;
   margin-bottom: 5vh;
+  border-bottom: 0.5vh solid #880AF0;
 }
 
 .form{
@@ -41,6 +42,7 @@ body{
   cursor: pointer;
   height: 2rem;
   background: #880AF0;
+  color: #FFF;
 }
 
 .form *{
@@ -49,7 +51,14 @@ body{
   border-radius: 5px;
 }
 
-.img{
+.img, .video{
   border-radius: 5px;
   border: 5px solid rgba(50, 100, 200, 0.2);
+  flex-grow: 1;
+}
+
+.oculto{
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
 }
