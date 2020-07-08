@@ -1,8 +1,12 @@
+*{
+  text-align: center;
+}
+
 body{
   display: flex;
   flex-flow: column;
   align-items: center;  
-  margin: 10px 180px 0;
+  margin: 10px 90px 0;
   background: url(https://s1.1zoom.me/b5050/435/427757-Kycb_1366x768.jpg);
   background-size: cover;
   color: #FFF;
@@ -51,14 +55,29 @@ body{
   border-radius: 5px;
 }
 
+.url{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
 .img, .video{
   border-radius: 5px;
   border: 5px solid rgba(50, 100, 200, 0.2);
-  flex-grow: 1;
+}
+
+.video{
+  height: 100vh;
 }
 
 .oculto{
   visibility: hidden;
   height: 0px;
   width: 0px;
+}
+
+@media(max-width: 650px){
+  .video{
+    height: auto;
+  }
 }

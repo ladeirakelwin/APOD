@@ -16,8 +16,7 @@ oReq.open('GET',`https://api.nasa.gov/planetary/apod?api_key=4aCgrQiswA81Mfaa3Ps
 oReq.onload = function() {
   //mandar 'recebe' para uma funçaão
   let recebe = JSON.parse(oReq.responseText);
-  console.log(recebe);
-
+  
   let data = document.querySelector(".data");
   data.textContent = dataFormatada(recebe); 
 
@@ -38,7 +37,7 @@ oReq.onload = function() {
   }
 
   let copyright = document.querySelector(".copyright");
-  if(recebe.copyright != undefined){
+  if(recebe.copyright !== undefined){
     copyright.textContent = "Image Credit & Copyright: "
     + recebe.copyright;
   }else{
